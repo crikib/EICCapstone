@@ -1,5 +1,5 @@
-#login {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
+.nav{
+    width: 100%;
+    overflow: hidden;
+    background-color: aqua;
 }

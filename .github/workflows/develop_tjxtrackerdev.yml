@@ -1,12 +1,12 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - TJXTracker
+name: Build and deploy Node.js app to Azure Web App - TJXTrackerDev
 
 on:
   push:
     branches:
-      - main
+      - Develop
   workflow_dispatch:
 
 jobs:
@@ -50,7 +50,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'TJXTracker'
+          app-name: 'TJXTrackerDev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_89E24EEEB22C448C84140440486666B0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_913B7DE2238D4ACE826B937C985A8F9B }}
           package: .
