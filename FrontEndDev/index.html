@@ -5,23 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "css/style.css">   <!-- Added CSS Stylesheet for the page-->
   <link rel="stylesheet" href="./css/bootstrap.css">
-  <title>Customers Page</title>
+  <title>Home | TJX Order Tracking</title>
 </head>
 
 <body>
   <main class="container">
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #9b0c23;">
-      <a class="navbar-brand" href="#">Customers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-    <header>
-      <h1>Home</h1>
-    </header>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
   </main>
+  <form class="row gy-2 gx-3 align-items-center" id = "login">
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingInput">Name</label>
+      <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+    </div>
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
 </body>
 
 </html>
