@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon ./BackEndDev/bin/www",
-    "server:root": "http-server -p 3000 --cors -c-1",
+    "server:root": "http-server ./FrontEndDev -p 3000 --cors -c-1",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
