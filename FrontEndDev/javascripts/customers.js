@@ -25,6 +25,18 @@ function generateRows(customers) {
   }
 
 function getNewCustomerData() {
+    let customer = {
+        customer_id:0,
+        first_name:$("#firstName").val(),
+        last_name:$("#lastName").val(),
+        phone:$("#phone").val(),
+        email:$("#email").val(),
+        customer_notes:$("#notes").val(),
+        address:$("#adress").val()
+    }
+    
+    let arrayCustomer = [customer];
+    return arrayCustomer;
     
 }
 
@@ -32,5 +44,13 @@ function getNewCustomerData() {
   // NOTE: after first deployement of the backEnd server URI can be changed to the public one 
   axios.get("http://localhost:3000/api/customers").then(({data}) => {
    let customerRows = generateRows(data.customers);
+   console.log(data.customers);
    document.getElementById("tableBody").replaceChildren(...customerRows);
 });
+
+$("#addButton").on("click" , () => {
+    let customer = getNewCustomerData();
+    console.log(customer);
+    let customerRow = generateRows(customer);
+    document.getElementById("tableBody").append(...customerRow);
+})
