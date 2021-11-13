@@ -53,11 +53,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../javascripts/jquery.js"></script>  
   <link rel="stylesheet" href="../css/bootstrap.css">
-
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../javascripts/jquery.js"></script>
 
 
   
@@ -95,13 +94,13 @@
         <div = class ="p-1">
           <div class = "form-row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="First Name">
+              <input type="text" class="form-control" placeholder="First Name" id="firstName">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Middle Name">
+              <input type="text" class="form-control" placeholder="Middle Name" id="middleName">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Last Name">
+              <input type="text" class="form-control" placeholder="Last Name" id="lastName">
             </div>
           </div>
         </div>
@@ -111,13 +110,13 @@
         <div class = "p-1">
           <div class="form-row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Phone">
+              <input type="text" class="form-control" placeholder="Phone" id="phone">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" placeholder="Email" id="email">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Address">
+              <input type="text" class="form-control" placeholder="Address" id="adress">
             </div>
           </div>
         </div>
@@ -127,41 +126,58 @@
         <div class = "p-1">
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Customer Notes">
+              <input type="text" class="form-control" placeholder="Customer Notes" id="notes">
             </div>
           </div>
         </div>
       </form>
 
-      <div class="col-md-12 text-right">
+      <div class="d-flex flex-column align-items-end">
         <div class="p-2">
           <a class="btn btn-primary" style="background-color: #9b0c23;" href="#!" role="button"
-          >Add Customer</a>
+          id= "addButton">Add Customer</a>
         </div>
       </div>
       
-
-      <div class = "p-3">
-        <div class="col-md-12 text-right"></div>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        </div>
-      </div>
+      <div class="d-flex flex-column align-items-end">
+        <form>
+          <div class = "p-1">
+            <div class="form-row">
 
 
-      <div class="col-md-12 text-right">
-        <div class = "p-3">
-          <a class="btn btn-primary" style="background-color: #9b0c23;" href="#!" role="button"
-          >Search</a>
-        </div>
-      </div>
+                <div class = "p-3">             
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+
+  
+                <div class = "p-3">
+                  <div class="row">
+                  <input type="text" class="form-control" placeholder="Phone">
+                  </div>
+                </div>
 
 
 
+                  <div class = "p-3">
+                    <a class="btn btn-primary" style="background-color: #9b0c23;" href="#!" role="button"
+                    >Search</a>
+                  </div>
+
+
+            </div>
+          </div>
+        </form>
+      </div>>
+
+
+
+      
 
         <div class="p-2">
           <table class="table table-striped table-hover">
