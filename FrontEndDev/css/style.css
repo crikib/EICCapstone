@@ -79,7 +79,7 @@ font-family: 'Ubuntu', sans-serif;
     
 }
 
-.submit, .btn {
+.submit, .btn-primary {
   cursor: pointer;
     border-radius: 5em;
     color: #fff;
@@ -118,6 +118,50 @@ p {
     width: 100%;
     margin:  1em auto 2em;
 }
+
+.jumbotron, h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+  
+  label{
+    padding-top: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    color:#9B0C23;
+    font-weight: bold;
+  }
+  .form-row{
+      margin-bottom: 3em;
+      justify-content: flex-end;
+  }
+
+  .submit-button, .reset-button{
+    cursor: pointer;
+    border-radius: 5em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 0;
+    background: #9B0C23;
+    color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+
+  .submit-button:hover, .reset-button:hover{
+    background: hsl(40, 68%, 94%);
+    color: #000000;
+    border: 2px solid black;
+}
+
+
 
 @media (max-width: 600px) {
     .main {
