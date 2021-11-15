@@ -155,26 +155,17 @@ p {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   }
 
-  .submit-button:hover, .reset-button:hover{
+  .submit-button:hover, .reset-button:hover, #search-button:hover{
     background: hsl(40, 68%, 94%);
     color: #000000;
     border: 2px solid black;
 }
 
-.btn-warning {
-    cursor: pointer;
-    border-radius: 5em;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border: 0;
+#search-button {
     background: #9B0C23;
     color: white;
-    font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+
 }
 
 #sbar, .input-group-text{
